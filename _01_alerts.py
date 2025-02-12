@@ -9,7 +9,7 @@ import time
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-class AlertsTst(unittest.TestCase):
+class AlertsTest(unittest.TestCase):
     
     def setUp(self):
         # Set up the Chrome driver
