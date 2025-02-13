@@ -56,7 +56,9 @@ class ChallengingDomTest(unittest.TestCase):
                     self.fail(f"No canvas displayed after button clicked")
             else:
                 self.fail(f"Button repeated, {background_color}")
-                
+       
+        logging.info("test_challenging_dom -> Test passed!")
+
     def test_table_info(self):
         driver = self.driver
         
@@ -97,7 +99,9 @@ class ChallengingDomTest(unittest.TestCase):
                         link.click()
                     except:
                         self.fail("Error while clicking the URL element")
-    
+
+        logging.info("test_table_info -> Test passed!")
+        
     
     # Cleaning the driver
     @classmethod
