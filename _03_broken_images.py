@@ -52,6 +52,8 @@ class BrokenImagesTest(unittest.TestCase):
             except Exception as e:
                 logging.error(f"Error checking image {src}: {e}")
                 self.fail(f"Failed to check image {src}: {e}")
+                
+        logging.info("test_broken_images -> Test passed!")
         
     # Cleaning the driver
     def tearDown(self):
