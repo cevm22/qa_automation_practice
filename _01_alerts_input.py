@@ -25,7 +25,7 @@ class AlertsInputTest(unittest.TestCase):
         time.sleep(3)
     
     
-    def test_alert_dismiss(self):
+    def test_alert_input(self):
         driver = self.driver
         wait = self.wait
         
@@ -50,7 +50,7 @@ class AlertsInputTest(unittest.TestCase):
         # Accept the input prompt
         time.sleep(3)
         
-        logging.info("test_alert_dismiss -> Test passed!")
+        logging.info("test_alert_input -> Test passed!")
 
         
     # Cleaning the driver
