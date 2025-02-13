@@ -22,7 +22,7 @@ class AlertsTest(unittest.TestCase):
         driver.get("https://the-internet.herokuapp.com/javascript_alerts")
         driver.maximize_window() 
         # Giving a little time to load
-        driver.implicitly_wait(3)
+        time.sleep(3)
     
     def test_alert(self):
         driver = self.driver
