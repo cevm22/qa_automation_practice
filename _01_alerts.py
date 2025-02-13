@@ -18,10 +18,11 @@ class AlertsTest(unittest.TestCase):
         driver = self.driver
         
         self.wait = WebDriverWait(driver, 10)  # Wait up to 10 seconds
-        # Giving a little time to load
-        driver.implicitly_wait(3)
         # Open the target webpage
         driver.get("https://the-internet.herokuapp.com/javascript_alerts")
+        driver.maximize_window() 
+        # Giving a little time to load
+        driver.implicitly_wait(3)
     
     def test_alert(self):
         driver = self.driver
